@@ -20,7 +20,9 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
 }
 
 .src-only {
@@ -61,31 +63,33 @@ p{
 
 /* Big area */
 .big-hero img {
-    width: 150px;
+    margin-top: 1em;
+    width: 135px;
 }
 
 .big-hero h2 {
-    font-size: 1.875em;
+    font-size: 2em;
     font-weight: 700;
     letter-spacing: 0.002em;
     margin-top: 1em ;
 }
 
 .big-hero p {
-    font-size: 0.7em;;
+    font-size: 0.95em;;
     color: #D7DEE6;
-
+    padding: 0;
 }
 
 /* Social links*/
 .social-links{
     list-style: none;
     padding: 0;
-    margin-top: 3em;
     display: flex;
     flex-direction: row;
-    justify-content: center
-
+    justify-content: center;
+    align-content: space-around;
+    margin-bottom: 5em;
+    margin-top: 0.5em;
 }
 
 .social-links li a{
@@ -93,7 +97,18 @@ p{
     text-decoration: none;
     font-size: 2.5em;
 }
-
+.fab{
+    font-size : 1.7em;
+}
+.fa-github{
+    margin-right: 0.4em;
+}
+/* Flecha hacia el area verde*/
+.fa-arrow-circle-down{
+    color:#0AC693;
+    font-size : calc(3em + 1vh);
+    margin-bottom: calc(1.5em + 1vh);
+}
 
 .green-area {
     background-color: #0AC693; 
@@ -103,7 +118,10 @@ p{
 .post {
     padding: 1em;
     margin-bottom: -2px;
+    margin-left: 3em;
+    margin-right: 3em;
 }
+/*Personaliza la palabra PUBLICACIONES */
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -128,16 +146,21 @@ p{
     text-align: left;
     padding-bottom: 2em;
 }
+.post ul li article h3{
+    margin-top: 0.5em;
+    font-size: 1.03em;
+    font-weight:bolder; 
+}
 
 .post article img{
-    height: 150px;
+    height: 178px;
     width: 100%;
     object-fit: cover;
 }
 
 .post article h3 {
     color: #0D5061;
-    margin-top: 2em;
+    margin-top: 2.1em;
     padding: 0em 1rem;
     font-size: 0.9em;
     white-space: nowrap;
@@ -147,34 +170,46 @@ p{
 
 .post article p {
     color:#112935;
-    font-size: 0.75em;
+    font-size: 1em;
     padding: 1rem;
-    line-height: 25px;
+    line-height: 24px;
 }
 
 /* About */
 
 .about{
     margin-top: 2em;
+    margin-left: 2.50em;
+    margin-right: 2.50em;
 }
+.about.container{
+    display: grid;
+    grid-auto-columns: 2;
+}
+
 
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.125em;
+    font-size: 1.2em;
     margin: 2em;
 }
 
 .bio-info img{
-   width: 200px;
+   width: 157px;
 }
 
 .bio-info p{
-    font-size: 16px;
+    font-size: 1.08em;
     padding: 2em;
     text-align: left;
     line-height: 25px;
     letter-spacing: 2px;
+    letter-spacing: 0;
+}
+
+.about label{
+    font-weight: bolder;
 }
 
 .contact {
@@ -185,20 +220,24 @@ p{
 }
 
 .contact * + * {
-    margin-top: 1.5em;
+    margin-top: 1.3em;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
+    font-size: 1.2em;
+    margin-top: 0.7em;
 }
 
 .contact-form input, .contact-form textarea{
-    padding: 1rem 2rem;
+    padding: 1rem 2.7rem;
     border: none;
     border-radius: 0px 2em;
     font-size: 1em;
     width: 100%;
+    margin-top: 0.7em;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Decorando placeholder */
@@ -213,11 +252,14 @@ p{
  
 :-ms-input-placeholder { color: #D7DEE6; }
 
+
 .contact-form input[type=submit] {
     background-color: #F74442;
     font-weight: 400;
     color: white;
     font-size: 1rem;
+    margin-bottom: 4em;
+    margin-top: 1.5em;
 }
 
 .black-decoration{
@@ -259,10 +301,14 @@ footer .social-links {
     text-decoration: none;
     
 }
+/* Al pasar el mause por los elementos del menu se vuelven rojos*/
+.menu li a:hover{
+    color: red; 
+}
+
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-  
     .post ul {
         list-style: none;
         display: flex;
