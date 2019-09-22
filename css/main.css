@@ -317,6 +317,13 @@ que esta dentro de clase .menu  */
 }
 
 
+
+
+
+
+
+
+
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
     /* Big area */
@@ -449,14 +456,15 @@ que esta dentro de clase .menu  */
 } 
 
 @media only screen and (min-width: 1024px) {
+    /*Coloca visibles los elementos de la clase .show-deskop*/
     .show-desktop {
         display: block;
     }
-
+    /*Coloca ocultos los elementos de la clase .hide-deskop*/
     .hide-desktop {
         display: none;
     }
-
+    /*MOdifica la clase .menu*/
     .menu {
         background-color: #112935; 
         position: static;
@@ -468,29 +476,19 @@ que esta dentro de clase .menu  */
     }
 
     /* Social links*/
+    /*Actualiza margen de la clase .social-links*/
     .social-links{
         margin-bottom: 1.3em;
         margin-top: 1em;
     }
+    /*Tamano fuente de la clase .fab*/
     .fab{
         font-size : 1.1em;
     }
     /*Area verde*/
-    .post {
-        padding: 0.3em;
-        padding-bottom: 0.9em;
-        margin-bottom: -2px;
-    }
-    .post h2 {
-        font-size: 1em;
-    }
-    .post ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     
+    /*El tmano se ve modificado ademas que el area original que ocupaba
+    se ve reducida a 33%*/
     .post ul li {
         min-height: 350px;
         max-height: 500px;
@@ -499,6 +497,7 @@ que esta dentro de clase .menu  */
         width: 33%;
         height: 100%;
     }
+    /*Se actualizan los atributos de los elemento de tipo article*/
     .post ul li article {
         min-height: 350px;
         max-height: 375px;
@@ -509,12 +508,7 @@ que esta dentro de clase .menu  */
         margin-bottom: 0.5em;
         height: 100%;
     }
-    .post article img{
-        height: 178px;
-        width: 100%;
-        object-fit: cover;
-    }
-    
+    /*Actualiza los elementos  h3 que pertenecen a article*/
     .post ul li article h3 {
     
         color: #0D5061;
@@ -524,29 +518,19 @@ que esta dentro de clase .menu  */
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    
+    /*Actualiza los parrafos que estan dentro de la seccion article*/
     .post ul li article p {
         color:#112935;
         font-size: 0.8em;
         padding: 1rem;
         line-height: 24px;
     }
-
-    .about .container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .about h2{
-        font-size:1em;
-        width: 100%;
-        margin-top: 0;
-    }
-
+    /*El tamano de fuente y area ocupada se ve modificada en la clase .bio-info*/
     .about .bio-info{
-        font-size:0.6em;
+        font-size:0.7em;
         width: 50%;
     }
+    /*El tamano de fuente de los elementos p de .bio info se cambio*/
     .about .bio-info p{
         font-size:1.3em;
     }
@@ -554,14 +538,15 @@ que esta dentro de clase .menu  */
         font-size:0.6em;
         width: 50%;
     }
+    /*Se elemina el margen de la clase .contact-form*/
     .about .contact-form{
         margin-top:0;
     }
-
+    /*Cambia tamano de fuente*/
     .about label{
         font-size: 1.2em;    
     }
-
+    /*Se modifica paddind*/
     .about  input{
         padding:1.2em;
     }
@@ -581,16 +566,20 @@ que esta dentro de clase .menu  */
 }
 
 @media only screen and (min-width: 1440px) {
+    /*Se modifica la clase .container*/
      .container {
         width: 100%;
         margin: 0 auto;
         max-width: 1440px;
     }
+    /*Area verde*/
+    /*Atributos de paddig y margen se ven modificados*/
     .post {
         padding-top: 0.3em;
         padding-bottom: 0.9em;
         margin-bottom: -2px;
     }
+    /*ul se convierte en un contendor con flex */
     .post ul {
         list-style: none;
         display: flex;
@@ -598,7 +587,8 @@ que esta dentro de clase .menu  */
         justify-content: center;
         width: 100%;
     }
-    
+    /*El tmano se ve modificado ademas que el area original que ocupaba
+    se ve reducida a 33%*/
     .post ul li {
         min-height: 350px;
         max-height: 1000px;
@@ -608,6 +598,7 @@ que esta dentro de clase .menu  */
         width: 33%;
         height: 100%;
     }
+    /*Actualiza los parrafos que estan dentro de la seccion article*/
     .post ul li article {
         min-height: 415px;
         max-height: 600px;
@@ -619,26 +610,5 @@ que esta dentro de clase .menu  */
         margin-bottom: 0.5em;
         height: 100%;
     }
-    .post article img{
-        height: 178px;
-        width: 100%;
-        object-fit: cover;
-    }
     
-    .post ul li article h3 {
-    
-        color: #0D5061;
-        margin-top: 0.8em;
-        padding: 0em 1rem;
-        white-space: wrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    
-    .post ul li article p {
-        color:#112935;
-        font-size: 0.8em;
-        padding: 1rem;
-        line-height: 24px;
-    }
 }
