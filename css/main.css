@@ -17,7 +17,7 @@ body {
     text-align: center;
     font-weight: 400;
 }
-
+/* flex para el logo y el nav*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -32,18 +32,19 @@ body {
 .hide-mobile {
     display: none;
 }
-
+/*Valores generales para todos los parrafo*/
 p{
     font-size: 0.7em;
     padding: 1rem;
     line-height: 25px;
 }
-
+/*Ancho y margen del logo*/
 .logo {
     width: 90px;
     margin: 1em;
 }
 
+/*Barras de menu para los dispositivos moviles*/
 .options {
     color: inherit;
     text-decoration: none;
@@ -57,23 +58,26 @@ p{
     align-items: flex-start;
 
 }
+
+/*Ultimo elemento de i dentro de la clase option*/
 .options i:last-child {
     font-size: 1.6rem;
 }
 
 /* Big area */
+/*Imagen personal*/
 .big-hero img {
     margin-top: 1em;
     width: 135px;
 }
-
+/*valores del texto con el nombre*/
 .big-hero h2 {
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 0.002em;
     margin-top: 1em ;
 }
-
+/*Valores la descripcion*/
 .big-hero p {
     font-size: 0.95em;;
     color: #D7DEE6;
@@ -81,6 +85,7 @@ p{
 }
 
 /* Social links*/
+/*definicion de posicionamiento de los social'links*/
 .social-links{
     list-style: none;
     padding: 0;
@@ -91,15 +96,17 @@ p{
     margin-bottom: 5em;
     margin-top: 0.5em;
 }
-
+/*logos de redes sociales*/
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
     font-size: 2.5em;
 }
+/*tamaño de los logos de redes sociales*/
 .fab{
     font-size : 1.7em;
 }
+/*MArgen de el logo de git para separar*/
 .fa-github{
     margin-right: 0.4em;
 }
@@ -109,12 +116,12 @@ p{
     font-size : calc(3em + 1vh);
     margin-bottom: 1.5em;
 }
-
+/*Color de el area de publicaciones*/
 .green-area {
     background-color: #0AC693; 
 }
 
-
+/*Area donde van los articulos*/
 .post {
     padding: 1em;
     margin-bottom: -2px;
@@ -128,17 +135,18 @@ p{
     font-size: 1.125em;
     margin: 1em;
 }
-
+/*Los articulos son una lista */
 .post ul {
-    list-style: none;
+    list-style: none;/*Se elimina estilo predeterminado*/
 }
 
+/*Area donde va ubicado cada articulo*/
 .post ul li {
     min-height: 300px;
     max-width: 350px;
     margin: 2rem auto;
 }
-
+/*Personalizacion de Articulo */
 .post ul li article {
     overflow: hidden;
     border-radius: 10px;
@@ -146,30 +154,21 @@ p{
     text-align: left;
     padding-bottom: 2em;
 }
-.post ul li article h3{
-    margin-top: 0.5em;
-    font-size: 1.03em;
-    font-weight:bolder; 
-}
 
+/*Imagen del articulo*/
 .post article img{
     height: 178px;
     width: 100%;
     object-fit: cover;
 }
 
-/*.post article h3 {
+/*Titulo de los articulos*/
+.post ul li article h3{
     color: #0D5061;
     margin-top: 2.1em;
     padding: 0em 1rem;
-    font-size: 0.9em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}*/
-.post ul li article h3{
     margin-top: 0.5em;
-    font-size: 0.8em;
+    font-size: 0.9em;
     overflow: hidden;
     white-space: wrap;
     font-weight:bolder;
@@ -178,7 +177,7 @@ p{
 
 .post ul li article p {
     color:#112935;
-    font-size: 0.6em;
+    font-size: 0.7em;
     padding: 1rem;
     line-height: 24px;
 }
@@ -359,12 +358,14 @@ footer .social-links {
     
     .post ul li {
         min-height: 300px;
-        max-height: 3500px;
+        max-height: 420px;
         margin: 1rem 0 0 0;
         flex: 1 0 300px;
         width: 50%;
     }
     .post ul li article {
+        min-height: 300px;
+        max-height: 420px;
         overflow: hidden;
         text-align: left;
         padding-bottom: 1em;
@@ -378,18 +379,18 @@ footer .social-links {
         object-fit: cover;
     }
     
-    .post article h3 {
-        color: #0D5061;
-        margin-top: 2.1em;
-        padding: 0em 1rem;
-        white-space: nowrap;
+    .post ul li article h3 {
+        font-size: 0.78em;
+        padding: 0em 1em;
         overflow: hidden;
-        text-overflow: ellipsis;
+        white-space: wrap;
+        font-weight:bolder;
+        text-overflow: ellipsis; 
     }
     
-    .post article p {
+    .post ul li article p {
         color:#112935;
-        font-size: 0.5em;
+        font-size: 0.6em;
         padding: 1rem;
         line-height: 24px;
     }
@@ -456,31 +457,9 @@ footer .social-links {
         margin-top: 1em;
     }
 
-    /* Big area */
-    .big-hero img {
-        margin-top: 1em;
-        width: 150px;
-    }
-
-    .big-hero h2 {
-        font-size: 1.5em;
-        font-weight: 700;
-        letter-spacing: 0.005em;
-        margin-top: 1em ;
-    }
-
-    .big-hero p {
-        font-size: 0.8em;;
-        color: #D7DEE6;
-        padding: 0;
-    }
-    .logo {
-        width: 150px;
-        margin: 1.5em;
-    }
     /* Social links*/
     .social-links{
-        margin-bottom: 3em;
+        margin-bottom: 1.3em;
         margin-top: 1em;
     }
     .fab{
@@ -491,8 +470,6 @@ footer .social-links {
         padding: 0.3em;
         padding-bottom: 0.9em;
         margin-bottom: -2px;
-        /*margin-left: 2em;
-        margin-right: 2em;*/
     }
     .post h2 {
         font-size: 1em;
@@ -505,20 +482,22 @@ footer .social-links {
     }
     
     .post ul li {
-        min-height: 300px;
-        max-height: 3500px;
-        margin: 1rem 0 0 0;
-        /*flex: 1 0 200px;*/
+        min-height: 350px;
+        max-height: 500px;
+        margin: 1em 0 0 0;
+        flex: 1 0 200px;
         width: 33%;
         height: 100%;
     }
     .post ul li article {
-        overflow: hidden;
+        min-height: 350px;
+        max-height: 375px;
         text-align: left;
         padding-bottom: 1em;
-        margin-left: 1.3em;
-        margin-right: 1.3em;
+        margin-left: 1.6em;
+        margin-right: 1.6em;
         margin-bottom: 0.5em;
+        height: 100%;
     }
     .post article img{
         height: 178px;
@@ -526,18 +505,19 @@ footer .social-links {
         object-fit: cover;
     }
     
-    .post article h3 {
+    .post ul li article h3 {
+    
         color: #0D5061;
-        margin-top: 2.1em;
+        margin-top: 0.8em;
         padding: 0em 1rem;
-        white-space: nowrap;
+        white-space: wrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
     
-    .post article p {
+    .post ul li article p {
         color:#112935;
-        font-size: 0.5em;
+        font-size: 0.8em;
         padding: 1rem;
         line-height: 24px;
     }
@@ -557,6 +537,9 @@ footer .social-links {
         font-size:0.6em;
         width: 50%;
     }
+    .about .bio-info p{
+        font-size:1.3em;
+    }
     .about .contact{
         font-size:0.6em;
         width: 50%;
@@ -566,11 +549,11 @@ footer .social-links {
     }
 
     .about label{
-        font-size: 1em;    
+        font-size: 1.2em;    
     }
 
     .about  input{
-        padding:1em;
+        padding:1.2em;
     }
 
     
