@@ -366,13 +366,15 @@ que esta dentro de clase .menu  */
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+    /*El tmano se ve modificado ademas que el area original que ocupaba
+    se ve reducida a 50%*/
     .post ul li {
         min-height: 300px;
         max-height: 420px;
         margin: 1rem 0 0 0;
         width: 50%;
     }
+    /*Se actualizan los atributos de los elemento de tipo article*/
     .post ul li article {
         min-height: 300px;
         max-height: 420px;
@@ -383,12 +385,7 @@ que esta dentro de clase .menu  */
         margin-right: 1.3em;
         margin-bottom: 0.5em;
     }
-    .post article img{
-        height: 178px;
-        width: 100%;
-        object-fit: cover;
-    }
-    
+    /*Actualiza los elementos  h3 que pertenecen a article*/
     .post ul li article h3 {
         font-size: 0.78em;
         padding: 0em 1em;
@@ -397,41 +394,44 @@ que esta dentro de clase .menu  */
         font-weight:bolder;
         text-overflow: ellipsis; 
     }
-    
+    /*Actualiza los parrafos que estan dentro de la seccion article*/
     .post ul li article p {
         color:#112935;
         font-size: 0.6em;
         padding: 1rem;
         line-height: 24px;
     }
-
+    /*Se agrega una distribucion de tipo flex a .container que pertenece a .about*/
     .about .container{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+    /*Modifica los elementos de tipo h2 que pertenezen a .about*/
     .about h2{
         font-size:1em;
         width: 100%;
         margin-top: 0;
     }
-
+    /*El tamano de fuente y area ocupada se ve modificada en la clase .bio-info*/
     .about .bio-info{
         font-size:0.6em;
         width: 50%;
     }
+    /*El tamano de fuente y area ocupada se ve modificada en la clase .contact*/
     .about .contact{
         font-size:0.6em;
         width: 50%;
     }
+    /*Se elemina el margen de la clase .contact-form*/
     .about .contact-form{
         margin-top:0;
     }
-
+    /*Cambia tamano de fuente*/
     .about label{
         font-size: 1em;    
     }
-
+    /*Se modifica paddinf*/
     .about  input{
         padding:1em;
     }
@@ -582,8 +582,63 @@ que esta dentro de clase .menu  */
 
 @media only screen and (min-width: 1440px) {
      .container {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         max-width: 1440px;
+    }
+    .post {
+        padding-top: 0.3em;
+        padding-bottom: 0.9em;
+        margin-bottom: -2px;
+    }
+    .post ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .post ul li {
+        min-height: 350px;
+        max-height: 1000px;
+        margin: 1em 0 0 0;
+        margin-left: 2em;
+        margin-right: 2em;
+        width: 33%;
+        height: 100%;
+    }
+    .post ul li article {
+        min-height: 415px;
+        max-height: 600px;
+        min-width: 300px;
+        text-align: left;
+        padding-bottom: 1em;
+        margin-left: 1.6em;
+        margin-right: 1.6em;
+        margin-bottom: 0.5em;
+        height: 100%;
+    }
+    .post article img{
+        height: 178px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .post ul li article h3 {
+    
+        color: #0D5061;
+        margin-top: 0.8em;
+        padding: 0em 1rem;
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .post ul li article p {
+        color:#112935;
+        font-size: 0.8em;
+        padding: 1rem;
+        line-height: 24px;
     }
 }
